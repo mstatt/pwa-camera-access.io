@@ -96,8 +96,10 @@
 
               captureButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
-                canvas.width = 500;
-                canvas.height = 500;
+                // Resize the Canvas
+                canvas.width = 300;
+                canvas.height = 300;
+                // Draw image frame to the canvas
                 context.drawImage(player, 0, 0);
                 shareButton.style.opacity = "0.9";
                 canvas.style.visibility='visible';
@@ -110,9 +112,10 @@
 
               clearButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
-                //$('#pop-analysis').modal('show');
+                // Resize the Canvas back small;
                 canvas.width = 10;
                 canvas.height = 10;
+                // Clear the canvas contents
                 context.clearRect(0, 0);
                 shareButton.style.opacity = "0.0";
                 canvas.style.visibility='hidden';
