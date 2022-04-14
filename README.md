@@ -66,7 +66,7 @@ Video Background            |  Frame Capture
 
 
 
-![Demo Site](https://mstatt.github.io/pwa-camera-access.io/)
+[Demo Site](https://mstatt.github.io/pwa-camera-access.io/)
 
 
 
