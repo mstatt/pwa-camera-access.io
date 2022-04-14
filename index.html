@@ -88,7 +88,6 @@
               const context = canvas.getContext('2d');
               const captureButton = document.getElementById('capture');
               const clearButton = document.getElementById('clear');
-              const shareButton = document.getElementById('share');
 
               const constraints = {
                 video: { facingMode: "environment" },
@@ -100,10 +99,7 @@
                 //canvas.width = 150;
                 //canvas.height = 150;
                 // Draw image frame to the canvas
-                canvas.style.visibility='visible';
                 context.drawImage(player, 0, 0);
-                shareButton.style.opacity = "0.9";
-                
               });
 
               // Attach the video stream to the video element and autoplay.
@@ -118,7 +114,6 @@
                 //canvas.height = 10;
                 // Clear the canvas contents
                 context.clearRect(0, 0);
-                canvas.style.visibility='hidden';
               });
 
               download_img = function(el) {
