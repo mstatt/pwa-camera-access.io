@@ -51,6 +51,7 @@ Video Background            |  Frame Capture
 ![screen-screenshot] |      ![capture-screenshot]
 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
@@ -70,6 +71,8 @@ Don't forget to give the project a star! Thanks again!
 See the https://github.com/mstatt/Emotion_Detection/issues for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
 <!-- LICENSE -->
 ## License
 
