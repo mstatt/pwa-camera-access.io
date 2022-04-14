@@ -38,6 +38,19 @@ In this project I wanted to test the capability of generating a full screen vide
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+
+
+### Built With
+
+This application was built using Bootstrap, Jquery.
+
+* [Bootstrap](https://getbootstrap.com/)
+* [JQuery](https://jquery.com/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
 <!-- OUTPUT -->
 ## Output
 
