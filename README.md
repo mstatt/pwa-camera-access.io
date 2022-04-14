@@ -35,9 +35,6 @@ Progressive Web Application Camera Access</h3>
 
 In this project I wanted to test the capability of generating a full screen video background using the rear facing camera of my mobile device through a web browser. Then take certain stills of that live feed and save them to the device. This was all done using standard libraries for Bootstrap, Jquery, Javascript and CSS. The implementation was not very difficult or cumbersome at all.
 
-
-Use this `README.md` to get started.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -68,7 +65,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 <br />
-See the https://github.com/mstatt/Emotion_Detection/issues for a full list of proposed features (and known issues).
+See the https://github.com/mstatt/pwa-camera-access/issues for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
