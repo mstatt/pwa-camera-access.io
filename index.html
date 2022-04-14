@@ -96,9 +96,9 @@
 
               captureButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
-                document.getElementById('canvas').height = 800;
-                document.getElementById('canvas').width = 800;
-                context.drawImage(player, 0, 0, canvas.width, canvas.height);
+                canvas.width = window.innerWidth
+                canvas.height = window.innerHeight
+                context.drawImage(player, 0, 0);
                 shareButton.style.opacity = "0.9";
                 canvas.style.visibility='visible';
               });
@@ -111,9 +111,9 @@
               clearButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
                 //$('#pop-analysis').modal('show');
-                  document.getElementById('canvas').height = 10;
-                document.getElementById('canvas').width = 10;
-                context.clearRect(0, 0, canvas.width, canvas.height);
+                canvas.width = 10;
+                canvas.height = 10;
+                context.clearRect(0, 0);
                 shareButton.style.opacity = "0.0";
                 canvas.style.visibility='hidden';
               });
