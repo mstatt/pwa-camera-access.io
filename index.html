@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Falcons.AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png">
+
+    <!--All css  are here-->
+
+    <!--Bootstrap css here-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <!--Font-Awsome css here-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+
+    <!--Custon css here-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+
+    <!--Responsive css here-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+    video {  
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #Analysis_results{
+      bottom: 0px;
+      background-color: rgba(0, 0, 0, .35);  
+      backdrop-filter: blur(5px);
+    }
+
+    td {
+      height: 50px;
+      vertical-align: center;
+    }
+</style>
+
+</head>
+<body id="index" class="home">
+<div class="se-pre-con"></div>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header logoo">
+            <a class="navbar-brand" href="https://falcons.ai"><img class="img-responsive" src="assets/images/pag-logo-white_2094_-01.png"></a>
+        </div>
+    </div>
+</nav>
+<!-- NAVIGATION -->
+<video id="player" controls autoplay></video>
+
+
+
+
+
+
+
+<!-- Copyright Section -->
+<section class="navbar-fixed-bottom">
+    <div class="container">
+        <div class="row  text-center">
+
+            <table class="table"  id="Analysis_results">
+              <tbody>
+                <tr>
+                  <td class="text-center"><img src="assets/images/01-light-vision-future-look-perspective-idea-insight-eye.svg" id="capture" width="50" height="50"></td>
+                  <td class="text-center"><a id="download" download="falcImage.jpg" href="" onclick="download_img(this);"><canvas id="canvas" width="100%" height="100%"></canvas></a></td>
+                  <td class="text-center"><img src="assets/images/07-light-no-cross-cancel-close-remove-delete-mark.svg" id="clear" width="50" height="50"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <script>
+              const player = document.getElementById('player');
+              const canvas = document.getElementById('canvas');
+              const context = canvas.getContext('2d');
+              const captureButton = document.getElementById('capture');
+              const clearButton = document.getElementById('clear');
+              const shareButton = document.getElementById('share');
+
+              const constraints = {
+                video: { facingMode: "environment" },
+              };
+
+              captureButton.addEventListener('click', () => {
+                // Draw the video frame to the canvas.
+                //$('#pop-analysis').modal('show');
+                context.drawImage(player, 0, 0, canvas.width, canvas.height);
+                shareButton.style.opacity = "0.9";
+                canvas.style.visibility='visible';
+              });
+
+              // Attach the video stream to the video element and autoplay.
+              navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
+                player.srcObject = stream;
+              });
+
+              clearButton.addEventListener('click', () => {
+                // Draw the video frame to the canvas.
+                //$('#pop-analysis').modal('show');
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                shareButton.style.opacity = "0.0";
+                canvas.style.visibility='hidden';
+              });
+
+              download_img = function(el) {
+                  // get image URI from canvas object
+                  var imageURI = canvas.toDataURL("image/jpg");
+                  el.href = imageURI;
+                };
+            </script>
+
+        </div>
+    </div>
+</section>
+<!-- Copyright Section -->
+
+
+<!-- All Javascripts -->
+<!-- Jquery -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+<!-- Common -->
+<script type="text/javascript" src="assets/js/common.js"></script>
+
+<!-- All Javascripts -->
+</body>
+</html>
