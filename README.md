@@ -39,8 +39,8 @@ In this project I wanted to test the capability of generating a full screen vide
 
 
 
-
-### Built With
+<!-- Built With -->
+## Built With
 
 This application was built using Bootstrap, Jquery.
 
