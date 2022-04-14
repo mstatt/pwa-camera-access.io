@@ -100,9 +100,10 @@
                 //canvas.width = 150;
                 //canvas.height = 150;
                 // Draw image frame to the canvas
+                canvas.style.visibility='visible';
                 context.drawImage(player, 0, 0);
                 shareButton.style.opacity = "0.9";
-                canvas.style.visibility='visible';
+                
               });
 
               // Attach the video stream to the video element and autoplay.
@@ -112,12 +113,11 @@
 
               clearButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
-                // Resize the Canvas back small;
+                // Resize the Canvas back small
                 //canvas.width = 10;
                 //canvas.height = 10;
                 // Clear the canvas contents
                 context.clearRect(0, 0);
-                shareButton.style.opacity = "0.0";
                 canvas.style.visibility='hidden';
               });
 
