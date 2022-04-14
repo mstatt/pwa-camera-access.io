@@ -30,6 +30,16 @@ Progressive Web Application Camera Access</h3>
 </div>
 
 
+<!-- ABOUT THE PROJECT -->
+## About The Emotion Detection Application by Falcons.ai
+
+In this project I wanted to test the capability of generating a full screen video background using the rear facing camera of my mobile device through a web browser. Then take certain stills of that live feed and save them to the device. This was all done using standard libraries for Bootstrap, Jquery, Javascript and CSS. The implementation was not very difficult or cumbersome at all.
+
+
+Use this `README.md` to get started.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 <!-- OUTPUT -->
 ## Output
@@ -43,6 +53,29 @@ Video Background            |  Frame Capture
 
 
 
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you want, feel free to fork this repository. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
+3. Commit your Changes (`git commit -m 'Add some YourFeature'`)
+4. Push to the Branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+<br />
+See the https://github.com/mstatt/Emotion_Detection/issues for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- LICENSE -->
+## License
+
+![](https://img.shields.io/badge/License-MIT-blue)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [license-shield]: assets/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6f74686e65696c647265772f426573742d524541444d452d54656d706c6174652e7376673f7374796c653d666f722d7468652d6261646765.svg?style=for-the-badge
