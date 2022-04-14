@@ -96,8 +96,8 @@
 
               captureButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
-                canvas.width = window.innerWidth
-                canvas.height = window.innerHeight
+                canvas.width = 500;
+                canvas.height = 500;
                 context.drawImage(player, 0, 0);
                 shareButton.style.opacity = "0.9";
                 canvas.style.visibility='visible';
