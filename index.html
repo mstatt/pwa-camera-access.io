@@ -76,7 +76,7 @@
               <tbody>
                 <tr>
                   <td class="text-center"><img src="assets/images/01-light-vision-future-look-perspective-idea-insight-eye.svg" id="capture" width="50" height="50"></td>
-                  <td class="text-center"><a id="download" download="falcImage.jpg" href="" onclick="download_img(this);"><canvas id="canvas" width="500px" height="500px"></canvas></a></td>
+                  <td class="text-center"><a id="download" download="falcImage.jpg" href="" onclick="download_img(this);"><canvas id="canvas" width="10px" height="10px"></canvas></a></td>
                   <td class="text-center"><img src="assets/images/07-light-no-cross-cancel-close-remove-delete-mark.svg" id="clear" width="50" height="50"></td>
                 </tr>
               </tbody>
@@ -96,7 +96,8 @@
 
               captureButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
-                //$('#pop-analysis').modal('show');
+                document.getElementById('canvas').height = 800;
+                document.getElementById('canvas').width = 800;
                 context.drawImage(player, 0, 0, canvas.width, canvas.height);
                 shareButton.style.opacity = "0.9";
                 canvas.style.visibility='visible';
@@ -110,6 +111,8 @@
               clearButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
                 //$('#pop-analysis').modal('show');
+                  document.getElementById('canvas').height = 10;
+                document.getElementById('canvas').width = 10;
                 context.clearRect(0, 0, canvas.width, canvas.height);
                 shareButton.style.opacity = "0.0";
                 canvas.style.visibility='hidden';
