@@ -76,7 +76,7 @@
               <tbody>
                 <tr>
                   <td class="text-center"><img src="assets/images/01-light-vision-future-look-perspective-idea-insight-eye.svg" id="capture" width="50" height="50"></td>
-                  <td class="text-center"><a id="download" download="falcImage.jpg" href="" onclick="download_img(this);"><canvas id="canvas" width="250px" height="250px"></canvas></a></td>
+                  <td class="text-center"><a id="download" download="falcImage.jpg" href="" onclick="download_img(this);"><canvas id="canvas" width="10px" height="10px"></canvas></a></td>
                   <td class="text-center"><img src="assets/images/07-light-no-cross-cancel-close-remove-delete-mark.svg" id="clear" width="50" height="50"></td>
                 </tr>
               </tbody>
@@ -95,8 +95,8 @@
               captureButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
                 // Resize the Canvas
-                //canvas.width = 150;
-                //canvas.height = 150;
+                canvas.width = 250;
+                canvas.height = 250;
                 // Draw image frame to the canvas
                 context.drawImage(player, 0, 0, canvas.width, canvas.height);
               });
@@ -109,8 +109,8 @@
               clearButton.addEventListener('click', () => {
                 // Draw the video frame to the canvas.
                 // Resize the Canvas back small
-                //canvas.width = 10;
-                //canvas.height = 10;
+                canvas.width = 10;
+                canvas.height = 10;
                 // Clear the canvas contents
                 context.clearRect(0, 0, canvas.width, canvas.height);
               });
