@@ -38,7 +38,7 @@ In the images below you can see still shots of the application runnning on your 
 
 Video Background            |  Frame Capture
 :-------------------------:|:-------------------------:
-![screen-screenshot] |  ![capture-screenshot]
+![screen-screenshot] |      ![capture-screenshot]
 
 
 
