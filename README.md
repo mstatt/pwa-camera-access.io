@@ -3,7 +3,7 @@
 <div id="top"></div>
 <div align="center">
   
-![](https://img.shields.io/badge/Language-Python-blue)
+![](https://img.shields.io/badge/Language-Javascript-blue)
 ![](https://img.shields.io/badge/License-MIT-blue)
 ![](https://img.shields.io/github/issues/mstatt/pwa-camera-access)
 ![](https://img.shields.io/github/forks/mstatt/pwa-camera-access)
@@ -47,5 +47,5 @@ Video Background            |  Frame Capture
 <!-- MARKDOWN LINKS & IMAGES -->
 [license-shield]: assets/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6f74686e65696c647265772f426573742d524541444d452d54656d706c6174652e7376673f7374796c653d666f722d7468652d6261646765.svg?style=for-the-badge
 [license-url]: https://github.com/mstatt/pwa-camera-access/blob/main/LICENSE.txt
-[screen-screenshot]: /assets/images/2022-04-14 17_56_00-Falcons.png
-[capture-screenshot]: /assets/images/2022-04-14 17_56_33-Falcons.png
+[screen-screenshot]: assets/images/2022-04-14_17_56_00-Falcons.png
+[capture-screenshot]: assets/images/2022-04-14_17_56_33-Falcons.png
